@@ -25,39 +25,13 @@
         style="animation-delay: 0.55s; animation-fill-mode: forwards"
       >
         <router-link to="/projects" class="btn-primary">
-          <i class="fas fa-folder-open"></i>
-          View Projects
+          <i class="fas fa-gamepad"></i>
+          View our game
         </router-link>
         <router-link to="/contact" class="btn-secondary">
           <i class="fas fa-envelope"></i>
           Contact
         </router-link>
-      </div>
-    </section>
-
-    <section class="container mx-auto px-4 py-16 border-t border-nix-border">
-      <h2 class="text-2xl font-mono text-nix-accent mb-8 text-center">What we do</h2>
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div
-          class="p-6 rounded-xl border border-nix-border bg-nix-surface card-hover opacity-0 animate-fade-in-up"
-          style="animation-delay: 0.1s; animation-fill-mode: forwards"
-        >
-          <i class="fas fa-code text-nix-accent text-2xl mb-4"></i>
-          <h3 class="font-mono text-lg text-gray-200 mb-2">Software House</h3>
-          <p class="text-gray-500 text-sm">
-            Web apps, mobile apps, APIs, and internal tools. We ship clean, maintainable code.
-          </p>
-        </div>
-        <div
-          class="p-6 rounded-xl border border-nix-border bg-nix-surface card-hover opacity-0 animate-fade-in-up"
-          style="animation-delay: 0.2s; animation-fill-mode: forwards"
-        >
-          <i class="fas fa-gamepad text-nix-cat text-2xl mb-4"></i>
-          <h3 class="font-mono text-lg text-gray-200 mb-2">Game Development</h3>
-          <p class="text-gray-500 text-sm">
-            Indie games and interactive experiences. From concept to release.
-          </p>
-        </div>
       </div>
     </section>
   </div>

@@ -56,7 +56,9 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:5173/nixfelis/** (base path is `/nixfelis/` for GitHub Pages compatibility).
+Open **http://localhost:5173/**.
+
+**Troubleshooting:** If you see *"Failed to resolve module specifier 'vue'"* or favicon 404s, you're loading the **source** without the dev server (e.g. opening `index.html` via `file://` or a plain static server). Use `npm run dev` and open the URL above, or run `npm run build` and serve the `dist/` folder. Opening `index.html` directly shows a short message explaining this.
 
 Preview production build:
 
@@ -65,7 +67,7 @@ npm run build
 npm run preview
 ```
 
-Again, use the URL with `/nixfelis/` (e.g. http://localhost:4173/nixfelis/).
+Again, use the URL shown (e.g. http://localhost:4173/).
 
 ---
 
@@ -82,10 +84,8 @@ Again, use the URL with `/nixfelis/` (e.g. http://localhost:4173/nixfelis/).
 
 Site URL will be:
 
-- `https://<user>.github.io/nixfelis/` or  
-- `https://<org>.github.io/nixfelis/`
-
-If your repo name is different, change `base` in `vite.config.js` to `'/your-repo-name/'`.
+- `https://<user>.github.io/` (user/org site repo must be named `<user>.github.io`)  
+- or `https://<user>.github.io/<repo>/` if you use a project repo and want a subpath — then set `base: '/<repo>/'` in `vite.config.js`.
 
 ---
 
@@ -111,13 +111,13 @@ Then:
 npm run deploy
 ```
 
-Ensure in **Settings → Pages** the source is the `gh-pages` branch (root or `/ (root)`). The site will be at the same URL as above (`/nixfelis/`).
+Ensure in **Settings → Pages** the source is the `gh-pages` branch (root or `/ (root)`). The site will be at your Pages URL (root or subpath depending on repo).
 
 ---
 
 ## Customization
 
-- **Base path:** If the repo name is not `nixfelis`, set `base` in `vite.config.js` to `'/your-repo-name/'`.
+- **Base path:** Site is at root by default (`base: '/'`). For a project Pages subpath, set `base: '/<repo-name>/'` in `vite.config.js`.
 - **Contact:** Update email and GitHub link in `src/views/ContactView.vue`.
 - **Projects:** Edit the `projects` array in `src/views/ProjectsView.vue`.
 - **Legal:** Edit `src/views/PrivacyView.vue` and `src/views/TermsView.vue` and their “Last updated” dates.
