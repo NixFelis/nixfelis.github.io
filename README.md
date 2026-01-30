@@ -78,14 +78,14 @@ Again, use the URL shown (e.g. http://localhost:4173/).
 1. Push the repo to GitHub (e.g. `your-org/nixfelis` or `your-user/nixfelis`).
 2. In the repo: **Settings → Pages**.
 3. Under **Build and deployment**:
-   - **Source:** GitHub Actions.
+   - **Source:** choose **GitHub Actions** (not "Deploy from a branch").  
+   If you use "Deploy from a branch", GitHub serves the raw repo (unbuilt source), so the site will show *"Failed to resolve module specifier vue"* — the built `dist/` must be deployed via the workflow.
 4. Push to `main` (or run the workflow manually). The **Deploy to GitHub Pages** workflow will:
    - install deps, run `npm run build`, and deploy the `dist/` contents to GitHub Pages.
 
-Site URL will be:
+Site URL will be your GitHub Pages URL (e.g. `https://nixfelis.github.io/`).
 
-- `https://<user>.github.io/` (user/org site repo must be named `<user>.github.io`)  
-- or `https://<user>.github.io/<repo>/` if you use a project repo and want a subpath — then set `base: '/<repo>/'` in `vite.config.js`.
+**Custom domain (e.g. nixfelis.com):** In **Settings → Pages**, set **Custom domain** to your domain and follow GitHub’s DNS instructions. The build outputs `404.html` (a copy of `index.html`) so that direct visits or refreshes on routes like `/projects` or `/about` still serve the SPA instead of a 404 page.
 
 ---
 
