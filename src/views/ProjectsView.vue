@@ -1,5 +1,6 @@
 <template>
-  <div class="container mx-auto px-4 py-12">
+  <div>
+    <div class="container mx-auto px-4 py-12">
     <header class="mb-12 text-center">
       <h1 class="text-3xl md:text-4xl font-mono font-bold text-nix-accent mb-4">Projects</h1>
       <p class="text-gray-500 max-w-xl mx-auto">
@@ -101,10 +102,10 @@
         </router-link>
       </p>
     </article>
-  </div>
+    </div>
 
-  <!-- Lightbox -->
-  <Teleport to="body">
+    <!-- Lightbox -->
+    <Teleport to="body">
     <Transition name="lightbox">
       <div
         v-show="lightboxOpen"
@@ -157,7 +158,8 @@
         </div>
       </div>
     </Transition>
-  </Teleport>
+    </Teleport>
+  </div>
 </template>
 
 <script setup>
