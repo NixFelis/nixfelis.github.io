@@ -34,6 +34,12 @@ const router = createRouter({
       meta: { title: 'Privacy Policy — NixFelis' },
     },
     {
+      path: '/legal/privacy/quack-match',
+      name: 'privacy-quack-match',
+      component: () => import('@/views/PrivacyQuackMatchView.vue'),
+      meta: { title: 'Privacy Policy — Quack Match — NixFelis' },
+    },
+    {
       path: '/legal/terms',
       name: 'terms',
       component: () => import('@/views/TermsView.vue'),

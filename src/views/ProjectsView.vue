@@ -95,6 +95,11 @@
         <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Toddler</span>
         <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Memory</span>
       </div>
+      <p class="mt-4 text-sm text-gray-500">
+        <router-link :to="{ name: 'privacy-quack-match' }" class="text-nix-accent hover:text-nix-accentDim transition-colors">
+          <i class="fas fa-shield-alt mr-1"></i>Privacy policy (app)
+        </router-link>
+      </p>
     </article>
   </div>
 
