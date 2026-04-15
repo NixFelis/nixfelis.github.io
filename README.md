@@ -87,6 +87,16 @@ Site URL will be your GitHub Pages URL (e.g. `https://nixfelis.github.io/`).
 
 **Custom domain (e.g. nixfelis.com):** In **Settings → Pages**, set **Custom domain** to your domain and follow GitHub’s DNS instructions. The build outputs `404.html` (a copy of `index.html`) so that direct visits or refreshes on routes like `/projects` or `/about` still serve the SPA instead of a 404 page.
 
+### App Privacy URLs for Play Store
+
+For app-store listings (for example Google Play), prefer a real static privacy page URL that returns HTTP 200 instead of an SPA route.
+
+- Create each app privacy page at `public/legal/privacy/<app-slug>/index.html`
+- Public URL pattern becomes: `https://nixfelis.com/legal/privacy/<app-slug>/`
+- Example in this repo: `public/legal/privacy/quack-match/index.html`
+
+This avoids deep-link SPA status-code issues on static hosting and gives a stable policy URL per app.
+
 ---
 
 ### Option B: Manual deploy (gh-pages branch)
