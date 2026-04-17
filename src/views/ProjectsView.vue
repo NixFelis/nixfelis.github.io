@@ -96,11 +96,19 @@
         <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Toddler</span>
         <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Memory</span>
       </div>
-      <p class="mt-4 text-sm text-gray-500">
+      <div class="mt-4 flex flex-wrap items-center gap-4 text-sm text-gray-500">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.nixfelis.quackmatch&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-nix-accent hover:text-nix-accentDim transition-colors"
+        >
+          <i class="fab fa-google-play mr-1"></i>Get it on Google Play
+        </a>
         <router-link :to="{ name: 'privacy-quack-match' }" class="text-nix-accent hover:text-nix-accentDim transition-colors">
           <i class="fas fa-shield-alt mr-1"></i>Privacy policy (app)
         </router-link>
-      </p>
+      </div>
     </article>
     </div>
 
