@@ -25,14 +25,14 @@
             </span>
             <div>
               <h2 class="font-mono text-xl text-gray-200">Tiny Seal</h2>
-              <p class="text-gray-500 text-sm">Android · Kids launcher · Parent PIN</p>
+              <p class="text-gray-500 text-sm">Android · Kids launcher · Phone &amp; tablet</p>
             </div>
           </div>
 
           <p class="text-gray-400 mb-6 leading-relaxed">
-            A kid-safe home screen for tablets. Parents choose which apps the child can open;
-            everything else stays behind a parent PIN. Themes, wallpapers, and Lock Task–friendly
-            pinning keep little hands on the kids home.
+            A kid-safe home screen for phones and tablets. Parents choose which apps the child can
+            open; everything else stays behind a parent PIN. Themes, wallpapers, and Lock
+            Task–friendly pinning keep little hands on the kids home.
           </p>
 
           <div class="mb-8">
@@ -91,6 +91,7 @@
             <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Android</span>
             <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Kids</span>
             <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Launcher</span>
+            <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Phone</span>
             <span class="px-2 py-1 text-xs rounded bg-nix-border text-gray-400">Tablet</span>
           </div>
           <div class="mt-4 flex flex-wrap items-center gap-4 text-sm text-gray-500">

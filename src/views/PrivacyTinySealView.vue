@@ -52,7 +52,7 @@
       <section>
         <h2 class="text-xl font-mono text-nix-accent mb-2">5. Children</h2>
         <p>
-          Tiny Seal is intended for use on a child’s tablet under a parent’s or guardian’s control.
+          Tiny Seal is intended for use on a child’s phone or tablet under a parent’s or guardian’s control.
           Parents configure the PIN and allowlist. The app does not include user-generated content,
           chat, or social features, and we do not collect data from children.
         </p>
