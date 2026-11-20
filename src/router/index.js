@@ -40,6 +40,12 @@ const router = createRouter({
       meta: { title: 'Privacy Policy — Quack Match — NixFelis' },
     },
     {
+      path: '/legal/privacy/tiny-seal',
+      name: 'privacy-tiny-seal',
+      component: () => import('@/views/PrivacyTinySealView.vue'),
+      meta: { title: 'Privacy Policy — Tiny Seal — NixFelis' },
+    },
+    {
       path: '/legal/terms',
       name: 'terms',
       component: () => import('@/views/TermsView.vue'),

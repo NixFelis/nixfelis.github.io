@@ -28,13 +28,29 @@
         </p>
       </section>
       <section>
-        <h2 class="text-xl font-mono text-nix-accent mb-2">4. Contact</h2>
+        <h2 class="text-xl font-mono text-nix-accent mb-2">4. App privacy policies</h2>
+        <p>Product-specific policies (also used for Google Play listings):</p>
+        <ul class="list-disc pl-5 space-y-1 mt-2">
+          <li>
+            <router-link :to="{ name: 'privacy-tiny-seal' }" class="text-nix-accent hover:text-nix-accentDim">
+              Tiny Seal
+            </router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'privacy-quack-match' }" class="text-nix-accent hover:text-nix-accentDim">
+              Quack Match
+            </router-link>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-xl font-mono text-nix-accent mb-2">5. Contact</h2>
         <p>
           If you contact us by email, we will use your email only to respond. We do not sell or share contact information.
         </p>
       </section>
       <section>
-        <h2 class="text-xl font-mono text-nix-accent mb-2">5. Changes</h2>
+        <h2 class="text-xl font-mono text-nix-accent mb-2">6. Changes</h2>
         <p>
           We may update this policy. The "Last updated" date at the top will reflect changes. Continued use of the site after changes constitutes acceptance.
         </p>
