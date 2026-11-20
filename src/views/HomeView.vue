@@ -25,8 +25,8 @@
         style="animation-delay: 0.55s; animation-fill-mode: forwards"
       >
         <router-link to="/projects" class="btn-primary">
-          <i class="fas fa-gamepad"></i>
-          View our game
+          <i class="fas fa-th-large"></i>
+          View our projects
         </router-link>
         <router-link to="/contact" class="btn-secondary">
           <i class="fas fa-envelope"></i>
