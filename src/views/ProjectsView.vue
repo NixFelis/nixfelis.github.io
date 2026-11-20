@@ -97,16 +97,11 @@
             <span class="text-gray-500">
               <i class="fab fa-google-play mr-1"></i>Coming soon on Google Play
             </span>
-            <router-link :to="{ name: 'privacy-tiny-seal' }" class="text-nix-accent hover:text-nix-accentDim transition-colors">
-              <i class="fas fa-shield-alt mr-1"></i>Privacy policy (app)
-            </router-link>
             <a
               href="/legal/privacy/tiny-seal/"
-              class="text-gray-500 hover:text-nix-accent transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
+              class="text-nix-accent hover:text-nix-accentDim transition-colors"
             >
-              <i class="fas fa-link mr-1"></i>Stable policy URL
+              <i class="fas fa-shield-alt mr-1"></i>Privacy policy
             </a>
           </div>
         </article>
@@ -208,9 +203,12 @@
             >
               <i class="fab fa-google-play mr-1"></i>Get it on Google Play
             </a>
-            <router-link :to="{ name: 'privacy-quack-match' }" class="text-nix-accent hover:text-nix-accentDim transition-colors">
-              <i class="fas fa-shield-alt mr-1"></i>Privacy policy (app)
-            </router-link>
+            <a
+              href="/legal/privacy/quack-match/"
+              class="text-nix-accent hover:text-nix-accentDim transition-colors"
+            >
+              <i class="fas fa-shield-alt mr-1"></i>Privacy policy
+            </a>
           </div>
         </article>
       </div>
